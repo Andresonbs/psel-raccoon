@@ -1,0 +1,3767 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Raccoon</title>
+	<script type="text/javascript">
+		//Dados iniciais
+    var dadosIniciais = {
+        "report_info": {
+          "trace_id": "3587b260-dc01-4a67-9a01-590d005753be",
+          "begin_date": "15/03/2019",
+          "end_date": "29/11/2019",
+          "response": 200,
+          "extraction_duration": "165 seconds",
+          "extraction_size": "10.3125 Mb"
+        },
+        "posts": [
+          {
+            "media": "google_cpc",
+            "post_id": "6644dd21-f696-45a0-863a-8bdb607484cb",
+            "title": "product_0_promocao",
+            "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+            "price": 84,
+            "date": "09/12/2018",
+            "likes": 815
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "a9633897-afe5-4a7e-80ea-a05cd597787b",
+            "title": "product_1_lancamento",
+            "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+            "price": 299,
+            "date": "24/04/2019",
+            "likes": 370
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "64a7e9eb-b5a0-4aeb-bbbf-b7dee9f5f629",
+            "title": "product_2_lancamento",
+            "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+            "price": 11,
+            "date": "22/06/2019",
+            "likes": 175
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "0dafdd62-9f61-4002-88e9-d6afcacd8440",
+            "title": "product_3_lancamento",
+            "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+            "price": 207,
+            "date": "14/01/2019",
+            "likes": 642
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "0fe9a0db-1fb1-4f8f-9276-65054436a925",
+            "title": "product_4_lancamento",
+            "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+            "price": 93,
+            "date": "01/03/2019",
+            "likes": 735
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "16f5489d-1bf3-4f78-a6c5-52827be508e0",
+            "title": "product_5_lancamento_promocao",
+            "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+            "price": 389,
+            "date": "07/11/2019",
+            "likes": 962
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "bb8e57f4-0d7c-4a99-bf17-9fcb1c4774c2",
+            "title": "product_6_promocao",
+            "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+            "price": 303,
+            "date": "21/05/2019",
+            "likes": 221
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "1e679ed3-80f8-487c-a966-c0208f5845f1",
+            "title": "product_7_padrao",
+            "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+            "price": 304,
+            "date": "02/02/2019",
+            "likes": 647
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "eaa5490c-78e8-4a7f-8373-726892513a0d",
+            "title": "product_8_lancamento",
+            "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+            "price": 343,
+            "date": "15/02/2019",
+            "likes": 121
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "59794db7-9a92-4250-9f52-35ae30de4aa3",
+            "title": "product_9_padrao",
+            "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+            "price": 345,
+            "date": "19/05/2019",
+            "likes": 537
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "c64f137d-decb-475d-a9b8-472231df2637",
+            "title": "product_10_promocao",
+            "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+            "price": 231,
+            "date": "10/09/2019",
+            "likes": 367
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "f6aedcf8-dc5e-457d-b2fe-036080e9718c",
+            "title": "product_11_lancamento_promocao",
+            "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+            "price": 228,
+            "date": "28/02/2019",
+            "likes": 304
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "42c62074-78e5-4c26-907d-bb595a2d6454",
+            "title": "product_12_padrao",
+            "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+            "price": 389,
+            "date": "10/10/2019",
+            "likes": 753
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "7de2d10d-14a8-48ec-a52f-245ec8e31b2b",
+            "title": "product_13_lancamento_promocao",
+            "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+            "price": 124,
+            "date": "14/02/2019",
+            "likes": 522
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "01681a48-adba-436f-bf74-264e69beed01",
+            "title": "product_14_promocao",
+            "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+            "price": 103,
+            "date": "31/12/2018",
+            "likes": 832
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "59832862-25e0-4427-aab9-edc4311f8f25",
+            "title": "product_15_lancamento",
+            "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+            "price": 270,
+            "date": "20/07/2019",
+            "likes": 329
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "48d7bcee-456d-4b40-8f2a-c7b21eac6f05",
+            "title": "product_16_promocao",
+            "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+            "price": 394,
+            "date": "30/04/2019",
+            "likes": 127
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "752ac2a0-2a42-45bb-a6b4-96a02d785842",
+            "title": "product_17_lancamento",
+            "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+            "price": 13,
+            "date": "05/07/2019",
+            "likes": 482
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "55e7743a-470d-4044-8b03-8da80291bb99",
+            "title": "product_18_lancamento_promocao",
+            "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+            "price": 404,
+            "date": "25/04/2019",
+            "likes": 342
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "2d95b7d5-7c4f-4d2a-b1e6-08734cebe292",
+            "title": "product_19_padrao",
+            "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+            "price": 172,
+            "date": "13/05/2019",
+            "likes": 881
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "fa4eff55-de80-4908-97c1-51865d4862c1",
+            "title": "product_20_promocao",
+            "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+            "price": 398,
+            "date": "15/02/2019",
+            "likes": 447
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "f39acd91-fa58-40a8-ab92-dc0c814c29ed",
+            "title": "product_21_promocao",
+            "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+            "price": 456,
+            "date": "25/12/2018",
+            "likes": 926
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "80e963a6-ff62-4ae7-986d-dfe1c43e424d",
+            "title": "product_22_padrao",
+            "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+            "price": 298,
+            "date": "06/05/2019",
+            "likes": 185
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "74a5c7b7-1132-40af-811c-6535311c7033",
+            "title": "product_23_lancamento",
+            "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+            "price": 500,
+            "date": "07/12/2018",
+            "likes": 880
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "2bfdd05c-b8e9-4212-9eb5-1abd4c2409f1",
+            "title": "product_24_promocao",
+            "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+            "price": 344,
+            "date": "08/11/2019",
+            "likes": 261
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "451df725-a5a7-448c-9acf-bde7555eb7f9",
+            "title": "product_25_promocao",
+            "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+            "price": 321,
+            "date": "23/07/2019",
+            "likes": 495
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "053f27df-f8c6-4589-b4d8-5be53331069a",
+            "title": "product_26_lancamento",
+            "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+            "price": 441,
+            "date": "17/06/2019",
+            "likes": 277
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "4cb312be-adcc-4ebe-8de5-26ec670e16a8",
+            "title": "product_27_lancamento",
+            "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+            "price": 93,
+            "date": "01/09/2019",
+            "likes": 515
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "5596b4e2-d8d4-4000-a0b2-f54f2ca0ed06",
+            "title": "product_28_lancamento_promocao",
+            "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+            "price": 108,
+            "date": "19/03/2019",
+            "likes": 184
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "99c6e3dc-496f-4711-a5ea-fbd06385aa87",
+            "title": "product_29_padrao",
+            "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+            "price": 325,
+            "date": "27/08/2019",
+            "likes": 738
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "97c01f7f-81bd-47de-84a4-4987f0c924f8",
+            "title": "product_30_padrao",
+            "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+            "price": 56,
+            "date": "31/01/2019",
+            "likes": 45
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "b4d87f1f-9ac6-4668-8ee5-5d2a2d51b033",
+            "title": "product_31_padrao",
+            "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+            "price": 465,
+            "date": "13/11/2019",
+            "likes": 452
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "06a55f82-d1c5-4c96-98d0-f19254016aa8",
+            "title": "product_32_padrao",
+            "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+            "price": 389,
+            "date": "12/08/2019",
+            "likes": 949
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "4c5679c3-4dd4-414a-a1e2-266f0cc8a00d",
+            "title": "product_33_lancamento_promocao",
+            "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+            "price": 317,
+            "date": "01/06/2019",
+            "likes": 864
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "2afa81bc-5daf-47ba-9560-a4666fb14c81",
+            "title": "product_34_lancamento_promocao",
+            "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+            "price": 415,
+            "date": "24/05/2019",
+            "likes": 254
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "ffed0079-000f-4f9c-8cc6-471333c1798d",
+            "title": "product_35_lancamento_promocao",
+            "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+            "price": 147,
+            "date": "04/07/2019",
+            "likes": 139
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "048355e4-6819-470b-984e-1536f81754ed",
+            "title": "product_36_lancamento",
+            "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+            "price": 101,
+            "date": "13/11/2019",
+            "likes": 810
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "a500f09c-9cab-4139-a19d-5af30e47e9ba",
+            "title": "product_37_promocao",
+            "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+            "price": 316,
+            "date": "21/09/2019",
+            "likes": 935
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "fa2f275c-f2a7-47f6-8ed1-b1f5c7a40498",
+            "title": "product_38_lancamento_promocao",
+            "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+            "price": 464,
+            "date": "17/08/2019",
+            "likes": 90
+          },
+          {
+            "media": "google_cpc",
+            "post_id": "e48df098-6bb7-405a-8de5-ba79e4c3c8cd",
+            "title": "product_39_lancamento_promocao",
+            "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+            "price": 32,
+            "date": "21/10/2019",
+            "likes": 836
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "ded24852-23f9-469e-8c4f-d2059a3c5727",
+            "title": "product_0_promocao",
+            "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+            "price": 84,
+            "date": "09/07/2019",
+            "likes": 759
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "1f98b58a-7adf-4510-8685-57f59a8dad2d",
+            "title": "product_1_lancamento",
+            "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+            "price": 299,
+            "date": "10/01/2019",
+            "likes": 296
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "3cb99f8c-e9c9-405d-9729-da7d32fe008c",
+            "title": "product_2_lancamento",
+            "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+            "price": 11,
+            "date": "13/11/2019",
+            "likes": 918
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "b9f1666a-4cf9-4cd4-985d-8fea83ef15e6",
+            "title": "product_3_lancamento",
+            "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+            "price": 207,
+            "date": "02/07/2019",
+            "likes": 123
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "c8bfaf98-e219-4bd0-8e30-35555596da39",
+            "title": "product_4_lancamento",
+            "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+            "price": 93,
+            "date": "21/06/2019",
+            "likes": 499
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "004c9c00-6c0d-4fcb-92ca-436503484551",
+            "title": "product_5_lancamento_promocao",
+            "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+            "price": 389,
+            "date": "11/08/2019",
+            "likes": 50
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "1cacf05f-8481-43e7-a223-1b6455e48275",
+            "title": "product_6_promocao",
+            "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+            "price": 303,
+            "date": "28/10/2019",
+            "likes": 166
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "1ee257b4-c83e-4f48-93bc-49bd2d8b2323",
+            "title": "product_7_padrao",
+            "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+            "price": 304,
+            "date": "11/06/2019",
+            "likes": 561
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "000c20fc-d8c7-41ae-9c7a-5516418917a8",
+            "title": "product_8_lancamento",
+            "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+            "price": 343,
+            "date": "07/04/2019",
+            "likes": 155
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "4db8bd3f-7a1d-4e72-b355-43cbd5cbdd34",
+            "title": "product_9_padrao",
+            "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+            "price": 345,
+            "date": "26/05/2019",
+            "likes": 509
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "32abb1f2-b053-47dd-b745-369bbbd0d472",
+            "title": "product_10_promocao",
+            "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+            "price": 231,
+            "date": "30/01/2019",
+            "likes": 270
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "d472c6bb-6fcc-4dbf-a4e3-a23b123a5d2a",
+            "title": "product_11_lancamento_promocao",
+            "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+            "price": 228,
+            "date": "06/04/2019",
+            "likes": 456
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "e493822c-5817-48b4-a771-ad4fe12e0381",
+            "title": "product_12_padrao",
+            "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+            "price": 389,
+            "date": "14/12/2018",
+            "likes": 326
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "4903803b-11c3-4fc0-8de3-3c1b2cd983e6",
+            "title": "product_13_lancamento_promocao",
+            "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+            "price": 124,
+            "date": "20/07/2019",
+            "likes": 102
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "707ef625-b997-43b7-b3c8-57dabb5e13f5",
+            "title": "product_14_promocao",
+            "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+            "price": 103,
+            "date": "10/03/2019",
+            "likes": 349
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "edb179c0-dcaf-41e3-93b0-37f0ae45aa24",
+            "title": "product_15_lancamento",
+            "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+            "price": 270,
+            "date": "14/01/2019",
+            "likes": 133
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "b663de73-95bc-4a7c-a9d3-2ea1efefe53f",
+            "title": "product_16_promocao",
+            "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+            "price": 394,
+            "date": "10/08/2019",
+            "likes": 345
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "313b1440-ae3b-4deb-b0e4-c6f506084966",
+            "title": "product_17_lancamento",
+            "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+            "price": 13,
+            "date": "29/08/2019",
+            "likes": 402
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "73ad8a30-3795-4a16-b988-e151e3805a04",
+            "title": "product_18_lancamento_promocao",
+            "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+            "price": 404,
+            "date": "03/09/2019",
+            "likes": 359
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "eb4dca32-4721-4897-ba35-44ce5fb14beb",
+            "title": "product_19_padrao",
+            "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+            "price": 172,
+            "date": "31/03/2019",
+            "likes": 206
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "59f52993-a880-48f0-9994-e1607a78b519",
+            "title": "product_20_promocao",
+            "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+            "price": 398,
+            "date": "03/06/2019",
+            "likes": 141
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "24fed816-7bc6-459f-8c30-6454720524b1",
+            "title": "product_21_promocao",
+            "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+            "price": 456,
+            "date": "23/01/2019",
+            "likes": 299
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "39893f12-1134-4b14-8f70-3887b886cbcc",
+            "title": "product_22_padrao",
+            "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+            "price": 298,
+            "date": "24/06/2019",
+            "likes": 267
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "48c8b1fb-fee4-469d-9ad2-c9ab20184949",
+            "title": "product_23_lancamento",
+            "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+            "price": 500,
+            "date": "14/11/2019",
+            "likes": 737
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "72ee9539-663b-494c-ac29-abbfab38f445",
+            "title": "product_24_promocao",
+            "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+            "price": 344,
+            "date": "01/10/2019",
+            "likes": 997
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "a868485e-b17a-417e-b9fe-8606c5a6e55a",
+            "title": "product_25_promocao",
+            "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+            "price": 321,
+            "date": "15/10/2019",
+            "likes": 994
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "b8828b50-c650-4f6e-8b07-8c85ecd56440",
+            "title": "product_26_lancamento",
+            "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+            "price": 441,
+            "date": "22/03/2019",
+            "likes": 655
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "dd49e5f1-684b-4f52-b4f0-c29d76a7163c",
+            "title": "product_27_lancamento",
+            "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+            "price": 93,
+            "date": "02/07/2019",
+            "likes": 505
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "ce158226-1ee9-4603-8df7-c16377f86012",
+            "title": "product_28_lancamento_promocao",
+            "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+            "price": 108,
+            "date": "23/12/2018",
+            "likes": 343
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "611b4f86-b2cb-4ebd-b387-c29f7eacfab9",
+            "title": "product_29_padrao",
+            "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+            "price": 325,
+            "date": "01/12/2018",
+            "likes": 921
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "6f1e0e06-cc29-4b2a-acef-a949ea4fbfb5",
+            "title": "product_30_padrao",
+            "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+            "price": 56,
+            "date": "10/05/2019",
+            "likes": 55
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "b11e9c41-e723-47e6-91af-8c32299bbdc3",
+            "title": "product_31_padrao",
+            "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+            "price": 465,
+            "date": "21/09/2019",
+            "likes": 990
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "e3167a20-5576-43e0-ac1a-1b9788040eca",
+            "title": "product_32_padrao",
+            "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+            "price": 389,
+            "date": "01/03/2019",
+            "likes": 442
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "2b040790-de64-45b8-95a3-ca64154e7f97",
+            "title": "product_33_lancamento_promocao",
+            "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+            "price": 317,
+            "date": "24/10/2019",
+            "likes": 946
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "80b01fff-0a06-45c0-9159-f23fc25ba421",
+            "title": "product_34_lancamento_promocao",
+            "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+            "price": 415,
+            "date": "12/09/2019",
+            "likes": 300
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "47cbb908-18cb-4a97-95e3-6eae2dd0fbb2",
+            "title": "product_35_lancamento_promocao",
+            "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+            "price": 147,
+            "date": "03/02/2019",
+            "likes": 863
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "ca65b974-1eac-4c1b-8984-8ffd61c339b2",
+            "title": "product_36_lancamento",
+            "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+            "price": 101,
+            "date": "23/04/2019",
+            "likes": 388
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "0d990a91-bbb2-48e4-9036-20e1758e6dc7",
+            "title": "product_37_promocao",
+            "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+            "price": 316,
+            "date": "19/04/2019",
+            "likes": 52
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "7f154f70-3474-4700-8547-dd9b01279596",
+            "title": "product_38_lancamento_promocao",
+            "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+            "price": 464,
+            "date": "13/06/2019",
+            "likes": 47
+          },
+          {
+            "media": "facebook_cpc",
+            "post_id": "f5040445-4ed4-4f60-985c-ba54fbe994c1",
+            "title": "product_39_lancamento_promocao",
+            "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+            "price": 32,
+            "date": "09/12/2018",
+            "likes": 611
+          },
+          {
+            "media": "direct",
+            "post_id": "74c29472-298a-487c-8800-588dd7ab6e17",
+            "title": "product_0_promocao",
+            "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+            "price": 84,
+            "date": "23/04/2019",
+            "likes": 137
+          },
+          {
+            "media": "direct",
+            "post_id": "419dcb60-5cfa-4837-890a-92db3209781a",
+            "title": "product_1_lancamento",
+            "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+            "price": 299,
+            "date": "24/05/2019",
+            "likes": 1000
+          },
+          {
+            "media": "direct",
+            "post_id": "462a58b0-527e-4ec8-9231-b573c90ad20f",
+            "title": "product_2_lancamento",
+            "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+            "price": 11,
+            "date": "04/03/2019",
+            "likes": 412
+          },
+          {
+            "media": "direct",
+            "post_id": "20815cbc-53bc-49cf-b469-3a8aa9e8be45",
+            "title": "product_3_lancamento",
+            "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+            "price": 207,
+            "date": "25/04/2019",
+            "likes": 334
+          },
+          {
+            "media": "direct",
+            "post_id": "41635f85-d723-41e0-ab59-48bff6d79635",
+            "title": "product_4_lancamento",
+            "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+            "price": 93,
+            "date": "03/12/2018",
+            "likes": 696
+          },
+          {
+            "media": "direct",
+            "post_id": "bbe1d9c3-d6c5-495c-95e6-977bdd1ec5d6",
+            "title": "product_5_lancamento_promocao",
+            "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+            "price": 389,
+            "date": "15/04/2019",
+            "likes": 756
+          },
+          {
+            "media": "direct",
+            "post_id": "94dd2b95-aa59-4988-aae9-3552949209b6",
+            "title": "product_6_promocao",
+            "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+            "price": 303,
+            "date": "28/11/2019",
+            "likes": 639
+          },
+          {
+            "media": "direct",
+            "post_id": "96c7fe3b-0571-48cd-b824-6bad53def079",
+            "title": "product_7_padrao",
+            "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+            "price": 304,
+            "date": "12/10/2019",
+            "likes": 885
+          },
+          {
+            "media": "direct",
+            "post_id": "8dafd37e-5a8e-4c04-920b-f63d88dc5ccc",
+            "title": "product_8_lancamento",
+            "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+            "price": 343,
+            "date": "07/05/2019",
+            "likes": 321
+          },
+          {
+            "media": "direct",
+            "post_id": "1e096676-e888-48b4-ba2d-b0539ccbf297",
+            "title": "product_9_padrao",
+            "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+            "price": 345,
+            "date": "27/03/2019",
+            "likes": 369
+          },
+          {
+            "media": "direct",
+            "post_id": "d29cfd99-9443-47e2-a83b-479adc9a83f0",
+            "title": "product_10_promocao",
+            "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+            "price": 231,
+            "date": "08/09/2019",
+            "likes": 531
+          },
+          {
+            "media": "direct",
+            "post_id": "333a6364-1d4a-4286-a4a9-1a50d7bd8379",
+            "title": "product_11_lancamento_promocao",
+            "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+            "price": 228,
+            "date": "18/07/2019",
+            "likes": 479
+          },
+          {
+            "media": "direct",
+            "post_id": "8280f4cb-11d9-47ec-97d9-15dbb36f4734",
+            "title": "product_12_padrao",
+            "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+            "price": 389,
+            "date": "04/10/2019",
+            "likes": 380
+          },
+          {
+            "media": "direct",
+            "post_id": "5214f80f-3a92-4091-9116-ea1cd49f94de",
+            "title": "product_13_lancamento_promocao",
+            "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+            "price": 124,
+            "date": "11/08/2019",
+            "likes": 976
+          },
+          {
+            "media": "direct",
+            "post_id": "336dda01-cfef-454b-a944-df4cb57fc57e",
+            "title": "product_14_promocao",
+            "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+            "price": 103,
+            "date": "17/03/2019",
+            "likes": 620
+          },
+          {
+            "media": "direct",
+            "post_id": "936fdd49-5dd7-4fad-b921-e9da633f3570",
+            "title": "product_15_lancamento",
+            "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+            "price": 270,
+            "date": "30/07/2019",
+            "likes": 542
+          },
+          {
+            "media": "direct",
+            "post_id": "f008d435-06df-467a-9813-cae7daef7acb",
+            "title": "product_16_promocao",
+            "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+            "price": 394,
+            "date": "05/09/2019",
+            "likes": 116
+          },
+          {
+            "media": "direct",
+            "post_id": "5caac27a-b928-4d85-ad68-7aa0bb260a1e",
+            "title": "product_17_lancamento",
+            "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+            "price": 13,
+            "date": "19/12/2018",
+            "likes": 980
+          },
+          {
+            "media": "direct",
+            "post_id": "b65a8804-6253-4d3c-a251-ba5965ccf8eb",
+            "title": "product_18_lancamento_promocao",
+            "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+            "price": 404,
+            "date": "08/03/2019",
+            "likes": 805
+          },
+          {
+            "media": "direct",
+            "post_id": "99e27a89-3fc3-4c83-b463-68d410bc9288",
+            "title": "product_19_padrao",
+            "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+            "price": 172,
+            "date": "03/08/2019",
+            "likes": 534
+          },
+          {
+            "media": "direct",
+            "post_id": "f50ae7b4-6e83-480a-bec4-65f55735852a",
+            "title": "product_20_promocao",
+            "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+            "price": 398,
+            "date": "03/02/2019",
+            "likes": 977
+          },
+          {
+            "media": "direct",
+            "post_id": "4c0054e3-4220-462e-a68c-f35985e184be",
+            "title": "product_21_promocao",
+            "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+            "price": 456,
+            "date": "04/10/2019",
+            "likes": 795
+          },
+          {
+            "media": "direct",
+            "post_id": "d14ed725-7d2b-45c1-92fe-a203e7d6c506",
+            "title": "product_22_padrao",
+            "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+            "price": 298,
+            "date": "27/12/2018",
+            "likes": 625
+          },
+          {
+            "media": "direct",
+            "post_id": "2684252c-19ce-44d1-86be-1bcace7fed93",
+            "title": "product_23_lancamento",
+            "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+            "price": 500,
+            "date": "21/04/2019",
+            "likes": 910
+          },
+          {
+            "media": "direct",
+            "post_id": "01c439ce-a225-44e6-b0ab-3127960f2cd3",
+            "title": "product_24_promocao",
+            "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+            "price": 344,
+            "date": "28/12/2018",
+            "likes": 314
+          },
+          {
+            "media": "direct",
+            "post_id": "f1543e8d-ee27-47c5-92e3-0fd015cc4f75",
+            "title": "product_25_promocao",
+            "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+            "price": 321,
+            "date": "09/05/2019",
+            "likes": 870
+          },
+          {
+            "media": "direct",
+            "post_id": "9341d13e-b327-4fc4-9760-4910d4e3d7b4",
+            "title": "product_26_lancamento",
+            "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+            "price": 441,
+            "date": "23/11/2019",
+            "likes": 409
+          },
+          {
+            "media": "direct",
+            "post_id": "0024159b-fa70-431d-a998-874b6b54d850",
+            "title": "product_27_lancamento",
+            "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+            "price": 93,
+            "date": "25/10/2019",
+            "likes": 810
+          },
+          {
+            "media": "direct",
+            "post_id": "204e4dec-1296-499d-b6d5-c1b06a0bd818",
+            "title": "product_28_lancamento_promocao",
+            "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+            "price": 108,
+            "date": "27/03/2019",
+            "likes": 911
+          },
+          {
+            "media": "direct",
+            "post_id": "5321e7d4-fb16-441c-80cc-052f834b913d",
+            "title": "product_29_padrao",
+            "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+            "price": 325,
+            "date": "16/11/2019",
+            "likes": 122
+          },
+          {
+            "media": "direct",
+            "post_id": "a4b94e73-617d-4545-a1f1-84318af20a6c",
+            "title": "product_30_padrao",
+            "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+            "price": 56,
+            "date": "20/10/2019",
+            "likes": 6
+          },
+          {
+            "media": "direct",
+            "post_id": "eddacee6-f9bb-4624-a0e6-9e245f124fb0",
+            "title": "product_31_padrao",
+            "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+            "price": 465,
+            "date": "08/06/2019",
+            "likes": 848
+          },
+          {
+            "media": "direct",
+            "post_id": "36f45632-2c2a-406a-baf7-3f0e663c5afc",
+            "title": "product_32_padrao",
+            "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+            "price": 389,
+            "date": "22/06/2019",
+            "likes": 465
+          },
+          {
+            "media": "direct",
+            "post_id": "df880409-34b5-4f5f-8a11-8fa52da48bcc",
+            "title": "product_33_lancamento_promocao",
+            "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+            "price": 317,
+            "date": "03/01/2019",
+            "likes": 219
+          },
+          {
+            "media": "direct",
+            "post_id": "6bd96095-f36b-4db5-8a88-dd45a0d997ab",
+            "title": "product_34_lancamento_promocao",
+            "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+            "price": 415,
+            "date": "29/07/2019",
+            "likes": 959
+          },
+          {
+            "media": "direct",
+            "post_id": "a1b2534d-4ea5-487b-800f-391f18f5457e",
+            "title": "product_35_lancamento_promocao",
+            "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+            "price": 147,
+            "date": "08/01/2019",
+            "likes": 441
+          },
+          {
+            "media": "direct",
+            "post_id": "9915ad4b-ee89-413a-a554-82dc7b2c0cdb",
+            "title": "product_36_lancamento",
+            "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+            "price": 101,
+            "date": "03/03/2019",
+            "likes": 15
+          },
+          {
+            "media": "direct",
+            "post_id": "3f759fbd-a979-4c0d-aebf-b7ab096d86d5",
+            "title": "product_37_promocao",
+            "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+            "price": 316,
+            "date": "03/07/2019",
+            "likes": 136
+          },
+          {
+            "media": "direct",
+            "post_id": "815b0a81-8668-405d-abb9-cc4b7b5edf67",
+            "title": "product_38_lancamento_promocao",
+            "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+            "price": 464,
+            "date": "03/07/2019",
+            "likes": 321
+          },
+          {
+            "media": "direct",
+            "post_id": "56d0960e-c02a-4c62-9887-707fdb082e7d",
+            "title": "product_39_lancamento_promocao",
+            "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+            "price": 32,
+            "date": "20/07/2019",
+            "likes": 70
+          },
+          {
+            "media": "google_organic",
+            "post_id": "1143a4b5-d7b8-4e88-a099-253e927b1500",
+            "title": "product_0_promocao",
+            "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+            "price": 84,
+            "date": "07/01/2019",
+            "likes": 456
+          },
+          {
+            "media": "google_organic",
+            "post_id": "e5c260b2-7133-40af-94f2-168142ef7c06",
+            "title": "product_1_lancamento",
+            "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+            "price": 299,
+            "date": "20/02/2019",
+            "likes": 274
+          },
+          {
+            "media": "google_organic",
+            "post_id": "6839a8dc-7dd8-4084-84bd-38a8206b011f",
+            "title": "product_2_lancamento",
+            "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+            "price": 11,
+            "date": "14/03/2019",
+            "likes": 28
+          },
+          {
+            "media": "google_organic",
+            "post_id": "4892e747-24b8-42e8-89f2-066efd67db03",
+            "title": "product_3_lancamento",
+            "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+            "price": 207,
+            "date": "08/02/2019",
+            "likes": 909
+          },
+          {
+            "media": "google_organic",
+            "post_id": "217e9bf4-d247-4e91-9970-472d4d47778a",
+            "title": "product_4_lancamento",
+            "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+            "price": 93,
+            "date": "01/10/2019",
+            "likes": 1
+          },
+          {
+            "media": "google_organic",
+            "post_id": "7061cf7f-e9ac-4634-88f0-51cd22aab817",
+            "title": "product_5_lancamento_promocao",
+            "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+            "price": 389,
+            "date": "27/05/2019",
+            "likes": 881
+          },
+          {
+            "media": "google_organic",
+            "post_id": "6370e06f-d0cc-42d8-bcea-c357689d3efc",
+            "title": "product_6_promocao",
+            "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+            "price": 303,
+            "date": "09/05/2019",
+            "likes": 686
+          },
+          {
+            "media": "google_organic",
+            "post_id": "99b3e4ad-3cb6-41cd-bdfe-9d4ec54555a8",
+            "title": "product_7_padrao",
+            "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+            "price": 304,
+            "date": "16/02/2019",
+            "likes": 794
+          },
+          {
+            "media": "google_organic",
+            "post_id": "5a8ffc39-2fd6-4893-8bf8-50010db15bfe",
+            "title": "product_8_lancamento",
+            "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+            "price": 343,
+            "date": "02/02/2019",
+            "likes": 235
+          },
+          {
+            "media": "google_organic",
+            "post_id": "803decc0-2beb-41c0-8454-5592760f43ba",
+            "title": "product_9_padrao",
+            "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+            "price": 345,
+            "date": "16/10/2019",
+            "likes": 390
+          },
+          {
+            "media": "google_organic",
+            "post_id": "e50446fd-82a0-4c3e-ada3-22e8e0c7990f",
+            "title": "product_10_promocao",
+            "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+            "price": 231,
+            "date": "12/05/2019",
+            "likes": 787
+          },
+          {
+            "media": "google_organic",
+            "post_id": "92eeba63-a848-4e68-9fd5-2077f658f7c6",
+            "title": "product_11_lancamento_promocao",
+            "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+            "price": 228,
+            "date": "02/10/2019",
+            "likes": 154
+          },
+          {
+            "media": "google_organic",
+            "post_id": "efaf2f37-84e1-4216-9898-7d08f69be7b3",
+            "title": "product_12_padrao",
+            "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+            "price": 389,
+            "date": "26/03/2019",
+            "likes": 171
+          },
+          {
+            "media": "google_organic",
+            "post_id": "80c2bffb-142d-4017-95ed-3417e5ff72f6",
+            "title": "product_13_lancamento_promocao",
+            "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+            "price": 124,
+            "date": "03/12/2018",
+            "likes": 919
+          },
+          {
+            "media": "google_organic",
+            "post_id": "a8be5085-0017-4cec-a732-9b51e6ec8129",
+            "title": "product_14_promocao",
+            "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+            "price": 103,
+            "date": "12/08/2019",
+            "likes": 644
+          },
+          {
+            "media": "google_organic",
+            "post_id": "0737e555-3d41-45cc-a590-d11f706ac32d",
+            "title": "product_15_lancamento",
+            "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+            "price": 270,
+            "date": "26/07/2019",
+            "likes": 370
+          },
+          {
+            "media": "google_organic",
+            "post_id": "9cd9e26a-4f0a-4641-9d68-f4d8d94dff04",
+            "title": "product_16_promocao",
+            "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+            "price": 394,
+            "date": "31/07/2019",
+            "likes": 428
+          },
+          {
+            "media": "google_organic",
+            "post_id": "9374db15-798e-4732-93e3-a06705bfbe78",
+            "title": "product_17_lancamento",
+            "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+            "price": 13,
+            "date": "25/10/2019",
+            "likes": 518
+          },
+          {
+            "media": "google_organic",
+            "post_id": "ad6b5eaf-b0a9-4166-8296-98d4d837ab8d",
+            "title": "product_18_lancamento_promocao",
+            "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+            "price": 404,
+            "date": "03/12/2018",
+            "likes": 597
+          },
+          {
+            "media": "google_organic",
+            "post_id": "887f5b0e-0bab-4fe9-9bbe-24373433965a",
+            "title": "product_19_padrao",
+            "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+            "price": 172,
+            "date": "17/07/2019",
+            "likes": 794
+          },
+          {
+            "media": "google_organic",
+            "post_id": "48e192e8-6884-4d07-8813-177f7ea8bbb3",
+            "title": "product_20_promocao",
+            "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+            "price": 398,
+            "date": "07/02/2019",
+            "likes": 847
+          },
+          {
+            "media": "google_organic",
+            "post_id": "2f2d4865-778a-4dc3-aad2-63f31d1a25ac",
+            "title": "product_21_promocao",
+            "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+            "price": 456,
+            "date": "20/09/2019",
+            "likes": 764
+          },
+          {
+            "media": "google_organic",
+            "post_id": "4567a615-ea42-4821-8f2b-0154a83983af",
+            "title": "product_22_padrao",
+            "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+            "price": 298,
+            "date": "12/09/2019",
+            "likes": 309
+          },
+          {
+            "media": "google_organic",
+            "post_id": "636ed268-e179-4336-9bf8-e1556d294c54",
+            "title": "product_23_lancamento",
+            "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+            "price": 500,
+            "date": "06/09/2019",
+            "likes": 440
+          },
+          {
+            "media": "google_organic",
+            "post_id": "e44a47bf-15b9-475b-9364-85841e3150d8",
+            "title": "product_24_promocao",
+            "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+            "price": 344,
+            "date": "19/06/2019",
+            "likes": 210
+          },
+          {
+            "media": "google_organic",
+            "post_id": "21fc2bb1-77cb-42e8-a78e-f2aa6901f9bd",
+            "title": "product_25_promocao",
+            "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+            "price": 321,
+            "date": "19/03/2019",
+            "likes": 205
+          },
+          {
+            "media": "google_organic",
+            "post_id": "eee8ef1e-7ce5-4b60-9b4f-30a1bcde1ce6",
+            "title": "product_26_lancamento",
+            "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+            "price": 441,
+            "date": "17/09/2019",
+            "likes": 206
+          },
+          {
+            "media": "google_organic",
+            "post_id": "68cecf4b-22e5-4108-be8d-0aff2b962158",
+            "title": "product_27_lancamento",
+            "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+            "price": 93,
+            "date": "17/02/2019",
+            "likes": 235
+          },
+          {
+            "media": "google_organic",
+            "post_id": "2fb3200d-5df4-4dfb-9304-f729071212de",
+            "title": "product_28_lancamento_promocao",
+            "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+            "price": 108,
+            "date": "04/06/2019",
+            "likes": 495
+          },
+          {
+            "media": "google_organic",
+            "post_id": "ca0cd05a-2cc6-4ebf-9938-227787f17cf3",
+            "title": "product_29_padrao",
+            "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+            "price": 325,
+            "date": "06/11/2019",
+            "likes": 96
+          },
+          {
+            "media": "google_organic",
+            "post_id": "b2d569ff-05b3-41af-b06c-3c2f7606f50c",
+            "title": "product_30_padrao",
+            "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+            "price": 56,
+            "date": "30/10/2019",
+            "likes": 732
+          },
+          {
+            "media": "google_organic",
+            "post_id": "974f7cd6-d581-4477-863b-73066f686f44",
+            "title": "product_31_padrao",
+            "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+            "price": 465,
+            "date": "29/04/2019",
+            "likes": 690
+          },
+          {
+            "media": "google_organic",
+            "post_id": "37f8cf7e-677a-427a-b1db-26ab1693aba2",
+            "title": "product_32_padrao",
+            "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+            "price": 389,
+            "date": "09/02/2019",
+            "likes": 799
+          },
+          {
+            "media": "google_organic",
+            "post_id": "f172b391-ac3c-4b05-97b2-01a63394d999",
+            "title": "product_33_lancamento_promocao",
+            "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+            "price": 317,
+            "date": "21/02/2019",
+            "likes": 844
+          },
+          {
+            "media": "google_organic",
+            "post_id": "d8049471-d787-42e3-bf14-8a2c3d4f6ae3",
+            "title": "product_34_lancamento_promocao",
+            "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+            "price": 415,
+            "date": "16/03/2019",
+            "likes": 291
+          },
+          {
+            "media": "google_organic",
+            "post_id": "6f630d83-6fa9-47c0-b603-dbb14a1df69d",
+            "title": "product_35_lancamento_promocao",
+            "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+            "price": 147,
+            "date": "11/09/2019",
+            "likes": 316
+          },
+          {
+            "media": "google_organic",
+            "post_id": "f8320939-c93c-4b1b-a990-d6a49f969284",
+            "title": "product_36_lancamento",
+            "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+            "price": 101,
+            "date": "24/06/2019",
+            "likes": 648
+          },
+          {
+            "media": "google_organic",
+            "post_id": "411476f3-cad3-4cd7-9e03-530d6e75276f",
+            "title": "product_37_promocao",
+            "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+            "price": 316,
+            "date": "20/11/2019",
+            "likes": 361
+          },
+          {
+            "media": "google_organic",
+            "post_id": "78ccba09-e10b-4ecf-b323-b859a363cfb3",
+            "title": "product_38_lancamento_promocao",
+            "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+            "price": 464,
+            "date": "25/08/2019",
+            "likes": 780
+          },
+          {
+            "media": "google_organic",
+            "post_id": "2652f2f9-eed3-4a23-ab7b-d31312306b56",
+            "title": "product_39_lancamento_promocao",
+            "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+            "price": 32,
+            "date": "25/07/2019",
+            "likes": 43
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "73e6c244-fdee-41b0-bbcb-941b9b90a34d",
+            "title": "product_0_promocao",
+            "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+            "price": 84,
+            "date": "03/08/2019",
+            "likes": 393
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "f532acc9-cf4f-4759-b328-4f55ee787c4a",
+            "title": "product_1_lancamento",
+            "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+            "price": 299,
+            "date": "28/02/2019",
+            "likes": 662
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "1cf0d262-ad07-436b-8a5a-d4c7f8319f89",
+            "title": "product_2_lancamento",
+            "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+            "price": 11,
+            "date": "25/01/2019",
+            "likes": 645
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "2f2d1d20-0b03-42a3-aa78-2c962d396eef",
+            "title": "product_3_lancamento",
+            "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+            "price": 207,
+            "date": "12/04/2019",
+            "likes": 211
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "58d214f9-425a-4a6a-a1a7-efe8fa49a2dd",
+            "title": "product_4_lancamento",
+            "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+            "price": 93,
+            "date": "13/06/2019",
+            "likes": 685
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "26850b8f-e8e7-43ac-b563-664258d59847",
+            "title": "product_5_lancamento_promocao",
+            "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+            "price": 389,
+            "date": "08/06/2019",
+            "likes": 926
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "3709b99f-315f-4e78-a7b9-971d7a2de71d",
+            "title": "product_6_promocao",
+            "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+            "price": 303,
+            "date": "17/03/2019",
+            "likes": 780
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "02dba980-cd61-4db9-82a1-c078947ea1a3",
+            "title": "product_7_padrao",
+            "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+            "price": 304,
+            "date": "10/01/2019",
+            "likes": 83
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "45382321-3fd2-4185-a2d7-c21cad64949e",
+            "title": "product_8_lancamento",
+            "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+            "price": 343,
+            "date": "12/09/2019",
+            "likes": 650
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "73e422c0-6fd3-4ebd-bcdf-5be8f53a7b6c",
+            "title": "product_9_padrao",
+            "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+            "price": 345,
+            "date": "22/10/2019",
+            "likes": 729
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "3e8dd343-0877-46b0-a8db-4bfc71cd9ff6",
+            "title": "product_10_promocao",
+            "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+            "price": 231,
+            "date": "02/10/2019",
+            "likes": 69
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "96059fdb-c708-453e-9740-74d03d3b2ba0",
+            "title": "product_11_lancamento_promocao",
+            "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+            "price": 228,
+            "date": "14/02/2019",
+            "likes": 393
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "1c7fd933-5f5f-438e-b527-9f3a2a02561c",
+            "title": "product_12_padrao",
+            "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+            "price": 389,
+            "date": "11/02/2019",
+            "likes": 590
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "4ee7492d-f8ab-42ca-ace1-f3fdc5825f53",
+            "title": "product_13_lancamento_promocao",
+            "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+            "price": 124,
+            "date": "08/05/2019",
+            "likes": 114
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "b7a008cd-af43-4a03-a2dd-73f06aa5ad90",
+            "title": "product_14_promocao",
+            "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+            "price": 103,
+            "date": "27/06/2019",
+            "likes": 896
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "7eb93683-3764-4e74-b3b2-0bba3f572cc6",
+            "title": "product_15_lancamento",
+            "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+            "price": 270,
+            "date": "12/05/2019",
+            "likes": 174
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "cc402b06-6a32-42fb-a476-2f5c64df8724",
+            "title": "product_16_promocao",
+            "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+            "price": 394,
+            "date": "17/08/2019",
+            "likes": 284
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "0d9d7c92-7531-4c43-9834-99c2eb06b450",
+            "title": "product_17_lancamento",
+            "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+            "price": 13,
+            "date": "09/07/2019",
+            "likes": 254
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "4c0eb175-6163-453e-b23d-14547155957a",
+            "title": "product_18_lancamento_promocao",
+            "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+            "price": 404,
+            "date": "21/03/2019",
+            "likes": 94
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "701d6de1-7333-40f3-9675-4fe2e8d35e7a",
+            "title": "product_19_padrao",
+            "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+            "price": 172,
+            "date": "06/03/2019",
+            "likes": 629
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "805a0831-dc8f-4edf-8bfe-ddbe31d2a5cb",
+            "title": "product_20_promocao",
+            "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+            "price": 398,
+            "date": "10/02/2019",
+            "likes": 183
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "1c0fe3c9-926d-47cb-808c-c3a35d2cf76a",
+            "title": "product_21_promocao",
+            "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+            "price": 456,
+            "date": "16/09/2019",
+            "likes": 656
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "3bff4bbe-d291-4de3-9497-6d153f714f8e",
+            "title": "product_22_padrao",
+            "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+            "price": 298,
+            "date": "04/11/2019",
+            "likes": 879
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "72e8f85e-c6d6-4ff4-86b3-52e0998e3d6a",
+            "title": "product_23_lancamento",
+            "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+            "price": 500,
+            "date": "17/10/2019",
+            "likes": 285
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "8db29aff-cc4a-43c4-9296-09b5609c390e",
+            "title": "product_24_promocao",
+            "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+            "price": 344,
+            "date": "12/12/2018",
+            "likes": 159
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "cbb7f5c9-a368-46d4-920c-0c44876629f8",
+            "title": "product_25_promocao",
+            "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+            "price": 321,
+            "date": "07/03/2019",
+            "likes": 437
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "a0be16b0-0134-415d-9641-87be6304def2",
+            "title": "product_26_lancamento",
+            "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+            "price": 441,
+            "date": "22/08/2019",
+            "likes": 87
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "581a2799-d44e-457c-8165-1a070f1260f7",
+            "title": "product_27_lancamento",
+            "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+            "price": 93,
+            "date": "11/01/2019",
+            "likes": 227
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "6acd1fa8-f059-4c88-890b-0ae44d9ffc69",
+            "title": "product_28_lancamento_promocao",
+            "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+            "price": 108,
+            "date": "06/11/2019",
+            "likes": 798
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "c625fa83-88c4-404c-8c84-223beeb61d14",
+            "title": "product_29_padrao",
+            "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+            "price": 325,
+            "date": "29/05/2019",
+            "likes": 953
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "42e4e5dd-0da8-470a-907a-65dae95fbd2e",
+            "title": "product_30_padrao",
+            "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+            "price": 56,
+            "date": "25/06/2019",
+            "likes": 533
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "53eeb24c-f38a-4b51-be6e-244b4e30db1d",
+            "title": "product_31_padrao",
+            "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+            "price": 465,
+            "date": "10/01/2019",
+            "likes": 108
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "8871d006-823c-46ac-bb26-420ef21ac973",
+            "title": "product_32_padrao",
+            "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+            "price": 389,
+            "date": "30/05/2019",
+            "likes": 635
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "0a3d6c9f-68ae-4cb1-9a27-b7248deb0d04",
+            "title": "product_33_lancamento_promocao",
+            "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+            "price": 317,
+            "date": "08/06/2019",
+            "likes": 148
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "da1fc280-d9be-45ef-9133-112bcb2e1516",
+            "title": "product_34_lancamento_promocao",
+            "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+            "price": 415,
+            "date": "01/07/2019",
+            "likes": 819
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "34d2d448-e01f-431e-99ba-ee37e60bb7a6",
+            "title": "product_35_lancamento_promocao",
+            "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+            "price": 147,
+            "date": "23/04/2019",
+            "likes": 544
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "05b4013a-04a9-40f9-939b-85a672a0b651",
+            "title": "product_36_lancamento",
+            "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+            "price": 101,
+            "date": "30/04/2019",
+            "likes": 523
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "8357824f-2ba2-4568-99d7-d9023f0d1ced",
+            "title": "product_37_promocao",
+            "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+            "price": 316,
+            "date": "31/05/2019",
+            "likes": 902
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "79652055-c59e-410c-a5fa-1cda2a1f78f0",
+            "title": "product_38_lancamento_promocao",
+            "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+            "price": 464,
+            "date": "06/08/2019",
+            "likes": 417
+          },
+          {
+            "media": "instagram_cpc",
+            "post_id": "2f10f548-557e-4e93-9971-370b3806b5b9",
+            "title": "product_39_lancamento_promocao",
+            "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+            "price": 32,
+            "date": "09/07/2019",
+            "likes": 714
+          }
+        ]
+    };
+
+    var exeD = {
+	  	"report_info": {
+	    "trace_id": "3587b260-dc01-4a67-9a01-590d005753be",
+	    "begin_date": "15/03/2019",
+	    "end_date": "29/11/2019",
+	    "response": 200,
+	    "extraction_duration": "165 seconds",
+	    "extraction_size": "10.3125 Mb"
+	  },
+	  "posts": [
+	    {
+	      "media": "google_cpc",
+	      "post_id": "6644dd21-f696-45a0-863a-8bdb607484cb",
+	      "title": "product_0_promocao",
+	      "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+	      "price": 84,
+	      "date": "09/12/2018",
+	      "likes": 815
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "a9633897-afe5-4a7e-80ea-a05cd597787b",
+	      "title": "product_1_lancamento",
+	      "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+	      "price": 299,
+	      "date": "24/04/2019",
+	      "likes": 370
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "64a7e9eb-b5a0-4aeb-bbbf-b7dee9f5f629",
+	      "title": "product_2_lancamento",
+	      "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+	      "price": 11,
+	      "date": "22/06/2019",
+	      "likes": 175
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "0dafdd62-9f61-4002-88e9-d6afcacd8440",
+	      "title": "product_3_lancamento",
+	      "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+	      "price": 207,
+	      "date": "14/01/2019",
+	      "likes": 642
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "0fe9a0db-1fb1-4f8f-9276-65054436a925",
+	      "title": "product_4_lancamento",
+	      "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+	      "price": 93,
+	      "date": "01/03/2019",
+	      "likes": 735
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "16f5489d-1bf3-4f78-a6c5-52827be508e0",
+	      "title": "product_5_lancamento_promocao",
+	      "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+	      "price": 389,
+	      "date": "07/11/2019",
+	      "likes": 962
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "bb8e57f4-0d7c-4a99-bf17-9fcb1c4774c2",
+	      "title": "product_6_promocao",
+	      "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+	      "price": 303,
+	      "date": "21/05/2019",
+	      "likes": 221
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "1e679ed3-80f8-487c-a966-c0208f5845f1",
+	      "title": "product_7_padrao",
+	      "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+	      "price": 304,
+	      "date": "02/02/2019",
+	      "likes": 647
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "eaa5490c-78e8-4a7f-8373-726892513a0d",
+	      "title": "product_8_lancamento",
+	      "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+	      "price": 343,
+	      "date": "15/02/2019",
+	      "likes": 121
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "59794db7-9a92-4250-9f52-35ae30de4aa3",
+	      "title": "product_9_padrao",
+	      "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+	      "price": 345,
+	      "date": "19/05/2019",
+	      "likes": 537
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "c64f137d-decb-475d-a9b8-472231df2637",
+	      "title": "product_10_promocao",
+	      "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+	      "price": 231,
+	      "date": "10/09/2019",
+	      "likes": 367
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "f6aedcf8-dc5e-457d-b2fe-036080e9718c",
+	      "title": "product_11_lancamento_promocao",
+	      "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+	      "price": 228,
+	      "date": "28/02/2019",
+	      "likes": 304
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "42c62074-78e5-4c26-907d-bb595a2d6454",
+	      "title": "product_12_padrao",
+	      "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+	      "price": 389,
+	      "date": "10/10/2019",
+	      "likes": 753
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "7de2d10d-14a8-48ec-a52f-245ec8e31b2b",
+	      "title": "product_13_lancamento_promocao",
+	      "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+	      "price": 124,
+	      "date": "14/02/2019",
+	      "likes": 522
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "01681a48-adba-436f-bf74-264e69beed01",
+	      "title": "product_14_promocao",
+	      "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+	      "price": 103,
+	      "date": "31/12/2018",
+	      "likes": 832
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "59832862-25e0-4427-aab9-edc4311f8f25",
+	      "title": "product_15_lancamento",
+	      "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+	      "price": 270,
+	      "date": "20/07/2019",
+	      "likes": 329
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "48d7bcee-456d-4b40-8f2a-c7b21eac6f05",
+	      "title": "product_16_promocao",
+	      "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+	      "price": 394,
+	      "date": "30/04/2019",
+	      "likes": 127
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "752ac2a0-2a42-45bb-a6b4-96a02d785842",
+	      "title": "product_17_lancamento",
+	      "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+	      "price": 13,
+	      "date": "05/07/2019",
+	      "likes": 482
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "55e7743a-470d-4044-8b03-8da80291bb99",
+	      "title": "product_18_lancamento_promocao",
+	      "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+	      "price": 404,
+	      "date": "25/04/2019",
+	      "likes": 342
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "2d95b7d5-7c4f-4d2a-b1e6-08734cebe292",
+	      "title": "product_19_padrao",
+	      "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+	      "price": 172,
+	      "date": "13/05/2019",
+	      "likes": 881
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "fa4eff55-de80-4908-97c1-51865d4862c1",
+	      "title": "product_20_promocao",
+	      "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+	      "price": 398,
+	      "date": "15/02/2019",
+	      "likes": 447
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "f39acd91-fa58-40a8-ab92-dc0c814c29ed",
+	      "title": "product_21_promocao",
+	      "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+	      "price": 456,
+	      "date": "25/12/2018",
+	      "likes": 926
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "80e963a6-ff62-4ae7-986d-dfe1c43e424d",
+	      "title": "product_22_padrao",
+	      "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+	      "price": 298,
+	      "date": "06/05/2019",
+	      "likes": 185
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "74a5c7b7-1132-40af-811c-6535311c7033",
+	      "title": "product_23_lancamento",
+	      "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+	      "price": 500,
+	      "date": "07/12/2018",
+	      "likes": 880
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "2bfdd05c-b8e9-4212-9eb5-1abd4c2409f1",
+	      "title": "product_24_promocao",
+	      "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+	      "price": 344,
+	      "date": "08/11/2019",
+	      "likes": 261
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "451df725-a5a7-448c-9acf-bde7555eb7f9",
+	      "title": "product_25_promocao",
+	      "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+	      "price": 321,
+	      "date": "23/07/2019",
+	      "likes": 495
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "053f27df-f8c6-4589-b4d8-5be53331069a",
+	      "title": "product_26_lancamento",
+	      "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+	      "price": 441,
+	      "date": "17/06/2019",
+	      "likes": 277
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "4cb312be-adcc-4ebe-8de5-26ec670e16a8",
+	      "title": "product_27_lancamento",
+	      "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+	      "price": 93,
+	      "date": "01/09/2019",
+	      "likes": 515
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "5596b4e2-d8d4-4000-a0b2-f54f2ca0ed06",
+	      "title": "product_28_lancamento_promocao",
+	      "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+	      "price": 108,
+	      "date": "19/03/2019",
+	      "likes": 184
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "99c6e3dc-496f-4711-a5ea-fbd06385aa87",
+	      "title": "product_29_padrao",
+	      "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+	      "price": 325,
+	      "date": "27/08/2019",
+	      "likes": 738
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "97c01f7f-81bd-47de-84a4-4987f0c924f8",
+	      "title": "product_30_padrao",
+	      "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+	      "price": 56,
+	      "date": "31/01/2019",
+	      "likes": 45
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "b4d87f1f-9ac6-4668-8ee5-5d2a2d51b033",
+	      "title": "product_31_padrao",
+	      "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+	      "price": 465,
+	      "date": "13/11/2019",
+	      "likes": 452
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "06a55f82-d1c5-4c96-98d0-f19254016aa8",
+	      "title": "product_32_padrao",
+	      "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+	      "price": 389,
+	      "date": "12/08/2019",
+	      "likes": 949
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "4c5679c3-4dd4-414a-a1e2-266f0cc8a00d",
+	      "title": "product_33_lancamento_promocao",
+	      "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+	      "price": 317,
+	      "date": "01/06/2019",
+	      "likes": 864
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "2afa81bc-5daf-47ba-9560-a4666fb14c81",
+	      "title": "product_34_lancamento_promocao",
+	      "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+	      "price": 415,
+	      "date": "24/05/2019",
+	      "likes": 254
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "ffed0079-000f-4f9c-8cc6-471333c1798d",
+	      "title": "product_35_lancamento_promocao",
+	      "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+	      "price": 147,
+	      "date": "04/07/2019",
+	      "likes": 139
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "048355e4-6819-470b-984e-1536f81754ed",
+	      "title": "product_36_lancamento",
+	      "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+	      "price": 101,
+	      "date": "13/11/2019",
+	      "likes": 810
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "a500f09c-9cab-4139-a19d-5af30e47e9ba",
+	      "title": "product_37_promocao",
+	      "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+	      "price": 316,
+	      "date": "21/09/2019",
+	      "likes": 935
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "fa2f275c-f2a7-47f6-8ed1-b1f5c7a40498",
+	      "title": "product_38_lancamento_promocao",
+	      "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+	      "price": 464,
+	      "date": "17/08/2019",
+	      "likes": 90
+	    },
+	    {
+	      "media": "google_cpc",
+	      "post_id": "e48df098-6bb7-405a-8de5-ba79e4c3c8cd",
+	      "title": "product_39_lancamento_promocao",
+	      "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+	      "price": 32,
+	      "date": "21/10/2019",
+	      "likes": 836
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "ded24852-23f9-469e-8c4f-d2059a3c5727",
+	      "title": "product_0_promocao",
+	      "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+	      "price": 84,
+	      "date": "09/07/2019",
+	      "likes": 759
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "1f98b58a-7adf-4510-8685-57f59a8dad2d",
+	      "title": "product_1_lancamento",
+	      "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+	      "price": 299,
+	      "date": "10/01/2019",
+	      "likes": 296
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "3cb99f8c-e9c9-405d-9729-da7d32fe008c",
+	      "title": "product_2_lancamento",
+	      "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+	      "price": 11,
+	      "date": "13/11/2019",
+	      "likes": 918
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "b9f1666a-4cf9-4cd4-985d-8fea83ef15e6",
+	      "title": "product_3_lancamento",
+	      "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+	      "price": 207,
+	      "date": "02/07/2019",
+	      "likes": 123
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "c8bfaf98-e219-4bd0-8e30-35555596da39",
+	      "title": "product_4_lancamento",
+	      "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+	      "price": 93,
+	      "date": "21/06/2019",
+	      "likes": 499
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "004c9c00-6c0d-4fcb-92ca-436503484551",
+	      "title": "product_5_lancamento_promocao",
+	      "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+	      "price": 389,
+	      "date": "11/08/2019",
+	      "likes": 50
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "1cacf05f-8481-43e7-a223-1b6455e48275",
+	      "title": "product_6_promocao",
+	      "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+	      "price": 303,
+	      "date": "28/10/2019",
+	      "likes": 166
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "1ee257b4-c83e-4f48-93bc-49bd2d8b2323",
+	      "title": "product_7_padrao",
+	      "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+	      "price": 304,
+	      "date": "11/06/2019",
+	      "likes": 561
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "000c20fc-d8c7-41ae-9c7a-5516418917a8",
+	      "title": "product_8_lancamento",
+	      "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+	      "price": 343,
+	      "date": "07/04/2019",
+	      "likes": 155
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "4db8bd3f-7a1d-4e72-b355-43cbd5cbdd34",
+	      "title": "product_9_padrao",
+	      "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+	      "price": 345,
+	      "date": "26/05/2019",
+	      "likes": 509
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "32abb1f2-b053-47dd-b745-369bbbd0d472",
+	      "title": "product_10_promocao",
+	      "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+	      "price": 231,
+	      "date": "30/01/2019",
+	      "likes": 270
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "d472c6bb-6fcc-4dbf-a4e3-a23b123a5d2a",
+	      "title": "product_11_lancamento_promocao",
+	      "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+	      "price": 228,
+	      "date": "06/04/2019",
+	      "likes": 456
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "e493822c-5817-48b4-a771-ad4fe12e0381",
+	      "title": "product_12_padrao",
+	      "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+	      "price": 389,
+	      "date": "14/12/2018",
+	      "likes": 326
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "4903803b-11c3-4fc0-8de3-3c1b2cd983e6",
+	      "title": "product_13_lancamento_promocao",
+	      "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+	      "price": 124,
+	      "date": "20/07/2019",
+	      "likes": 102
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "707ef625-b997-43b7-b3c8-57dabb5e13f5",
+	      "title": "product_14_promocao",
+	      "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+	      "price": 103,
+	      "date": "10/03/2019",
+	      "likes": 349
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "edb179c0-dcaf-41e3-93b0-37f0ae45aa24",
+	      "title": "product_15_lancamento",
+	      "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+	      "price": 270,
+	      "date": "14/01/2019",
+	      "likes": 133
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "b663de73-95bc-4a7c-a9d3-2ea1efefe53f",
+	      "title": "product_16_promocao",
+	      "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+	      "price": 394,
+	      "date": "10/08/2019",
+	      "likes": 345
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "313b1440-ae3b-4deb-b0e4-c6f506084966",
+	      "title": "product_17_lancamento",
+	      "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+	      "price": 13,
+	      "date": "29/08/2019",
+	      "likes": 402
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "73ad8a30-3795-4a16-b988-e151e3805a04",
+	      "title": "product_18_lancamento_promocao",
+	      "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+	      "price": 404,
+	      "date": "03/09/2019",
+	      "likes": 359
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "eb4dca32-4721-4897-ba35-44ce5fb14beb",
+	      "title": "product_19_padrao",
+	      "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+	      "price": 172,
+	      "date": "31/03/2019",
+	      "likes": 206
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "59f52993-a880-48f0-9994-e1607a78b519",
+	      "title": "product_20_promocao",
+	      "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+	      "price": 398,
+	      "date": "03/06/2019",
+	      "likes": 141
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "24fed816-7bc6-459f-8c30-6454720524b1",
+	      "title": "product_21_promocao",
+	      "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+	      "price": 456,
+	      "date": "23/01/2019",
+	      "likes": 299
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "39893f12-1134-4b14-8f70-3887b886cbcc",
+	      "title": "product_22_padrao",
+	      "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+	      "price": 298,
+	      "date": "24/06/2019",
+	      "likes": 267
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "48c8b1fb-fee4-469d-9ad2-c9ab20184949",
+	      "title": "product_23_lancamento",
+	      "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+	      "price": 500,
+	      "date": "14/11/2019",
+	      "likes": 737
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "72ee9539-663b-494c-ac29-abbfab38f445",
+	      "title": "product_24_promocao",
+	      "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+	      "price": 344,
+	      "date": "01/10/2019",
+	      "likes": 997
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "a868485e-b17a-417e-b9fe-8606c5a6e55a",
+	      "title": "product_25_promocao",
+	      "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+	      "price": 321,
+	      "date": "15/10/2019",
+	      "likes": 994
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "b8828b50-c650-4f6e-8b07-8c85ecd56440",
+	      "title": "product_26_lancamento",
+	      "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+	      "price": 441,
+	      "date": "22/03/2019",
+	      "likes": 655
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "dd49e5f1-684b-4f52-b4f0-c29d76a7163c",
+	      "title": "product_27_lancamento",
+	      "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+	      "price": 93,
+	      "date": "02/07/2019",
+	      "likes": 505
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "ce158226-1ee9-4603-8df7-c16377f86012",
+	      "title": "product_28_lancamento_promocao",
+	      "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+	      "price": 108,
+	      "date": "23/12/2018",
+	      "likes": 343
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "611b4f86-b2cb-4ebd-b387-c29f7eacfab9",
+	      "title": "product_29_padrao",
+	      "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+	      "price": 325,
+	      "date": "01/12/2018",
+	      "likes": 921
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "6f1e0e06-cc29-4b2a-acef-a949ea4fbfb5",
+	      "title": "product_30_padrao",
+	      "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+	      "price": 56,
+	      "date": "10/05/2019",
+	      "likes": 55
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "b11e9c41-e723-47e6-91af-8c32299bbdc3",
+	      "title": "product_31_padrao",
+	      "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+	      "price": 465,
+	      "date": "21/09/2019",
+	      "likes": 990
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "e3167a20-5576-43e0-ac1a-1b9788040eca",
+	      "title": "product_32_padrao",
+	      "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+	      "price": 389,
+	      "date": "01/03/2019",
+	      "likes": 442
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "2b040790-de64-45b8-95a3-ca64154e7f97",
+	      "title": "product_33_lancamento_promocao",
+	      "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+	      "price": 317,
+	      "date": "24/10/2019",
+	      "likes": 946
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "80b01fff-0a06-45c0-9159-f23fc25ba421",
+	      "title": "product_34_lancamento_promocao",
+	      "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+	      "price": 415,
+	      "date": "12/09/2019",
+	      "likes": 300
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "47cbb908-18cb-4a97-95e3-6eae2dd0fbb2",
+	      "title": "product_35_lancamento_promocao",
+	      "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+	      "price": 147,
+	      "date": "03/02/2019",
+	      "likes": 863
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "ca65b974-1eac-4c1b-8984-8ffd61c339b2",
+	      "title": "product_36_lancamento",
+	      "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+	      "price": 101,
+	      "date": "23/04/2019",
+	      "likes": 388
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "0d990a91-bbb2-48e4-9036-20e1758e6dc7",
+	      "title": "product_37_promocao",
+	      "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+	      "price": 316,
+	      "date": "19/04/2019",
+	      "likes": 52
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "7f154f70-3474-4700-8547-dd9b01279596",
+	      "title": "product_38_lancamento_promocao",
+	      "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+	      "price": 464,
+	      "date": "13/06/2019",
+	      "likes": 47
+	    },
+	    {
+	      "media": "facebook_cpc",
+	      "post_id": "f5040445-4ed4-4f60-985c-ba54fbe994c1",
+	      "title": "product_39_lancamento_promocao",
+	      "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+	      "price": 32,
+	      "date": "09/12/2018",
+	      "likes": 611
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "74c29472-298a-487c-8800-588dd7ab6e17",
+	      "title": "product_0_promocao",
+	      "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+	      "price": 84,
+	      "date": "23/04/2019",
+	      "likes": 137
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "419dcb60-5cfa-4837-890a-92db3209781a",
+	      "title": "product_1_lancamento",
+	      "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+	      "price": 299,
+	      "date": "24/05/2019",
+	      "likes": 1000
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "462a58b0-527e-4ec8-9231-b573c90ad20f",
+	      "title": "product_2_lancamento",
+	      "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+	      "price": 11,
+	      "date": "04/03/2019",
+	      "likes": 412
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "20815cbc-53bc-49cf-b469-3a8aa9e8be45",
+	      "title": "product_3_lancamento",
+	      "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+	      "price": 207,
+	      "date": "25/04/2019",
+	      "likes": 334
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "41635f85-d723-41e0-ab59-48bff6d79635",
+	      "title": "product_4_lancamento",
+	      "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+	      "price": 93,
+	      "date": "03/12/2018",
+	      "likes": 696
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "bbe1d9c3-d6c5-495c-95e6-977bdd1ec5d6",
+	      "title": "product_5_lancamento_promocao",
+	      "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+	      "price": 389,
+	      "date": "15/04/2019",
+	      "likes": 756
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "94dd2b95-aa59-4988-aae9-3552949209b6",
+	      "title": "product_6_promocao",
+	      "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+	      "price": 303,
+	      "date": "28/11/2019",
+	      "likes": 639
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "96c7fe3b-0571-48cd-b824-6bad53def079",
+	      "title": "product_7_padrao",
+	      "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+	      "price": 304,
+	      "date": "12/10/2019",
+	      "likes": 885
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "8dafd37e-5a8e-4c04-920b-f63d88dc5ccc",
+	      "title": "product_8_lancamento",
+	      "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+	      "price": 343,
+	      "date": "07/05/2019",
+	      "likes": 321
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "1e096676-e888-48b4-ba2d-b0539ccbf297",
+	      "title": "product_9_padrao",
+	      "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+	      "price": 345,
+	      "date": "27/03/2019",
+	      "likes": 369
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "d29cfd99-9443-47e2-a83b-479adc9a83f0",
+	      "title": "product_10_promocao",
+	      "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+	      "price": 231,
+	      "date": "08/09/2019",
+	      "likes": 531
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "333a6364-1d4a-4286-a4a9-1a50d7bd8379",
+	      "title": "product_11_lancamento_promocao",
+	      "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+	      "price": 228,
+	      "date": "18/07/2019",
+	      "likes": 479
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "8280f4cb-11d9-47ec-97d9-15dbb36f4734",
+	      "title": "product_12_padrao",
+	      "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+	      "price": 389,
+	      "date": "04/10/2019",
+	      "likes": 380
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "5214f80f-3a92-4091-9116-ea1cd49f94de",
+	      "title": "product_13_lancamento_promocao",
+	      "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+	      "price": 124,
+	      "date": "11/08/2019",
+	      "likes": 976
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "336dda01-cfef-454b-a944-df4cb57fc57e",
+	      "title": "product_14_promocao",
+	      "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+	      "price": 103,
+	      "date": "17/03/2019",
+	      "likes": 620
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "936fdd49-5dd7-4fad-b921-e9da633f3570",
+	      "title": "product_15_lancamento",
+	      "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+	      "price": 270,
+	      "date": "30/07/2019",
+	      "likes": 542
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "f008d435-06df-467a-9813-cae7daef7acb",
+	      "title": "product_16_promocao",
+	      "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+	      "price": 394,
+	      "date": "05/09/2019",
+	      "likes": 116
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "5caac27a-b928-4d85-ad68-7aa0bb260a1e",
+	      "title": "product_17_lancamento",
+	      "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+	      "price": 13,
+	      "date": "19/12/2018",
+	      "likes": 980
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "b65a8804-6253-4d3c-a251-ba5965ccf8eb",
+	      "title": "product_18_lancamento_promocao",
+	      "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+	      "price": 404,
+	      "date": "08/03/2019",
+	      "likes": 805
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "99e27a89-3fc3-4c83-b463-68d410bc9288",
+	      "title": "product_19_padrao",
+	      "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+	      "price": 172,
+	      "date": "03/08/2019",
+	      "likes": 534
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "f50ae7b4-6e83-480a-bec4-65f55735852a",
+	      "title": "product_20_promocao",
+	      "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+	      "price": 398,
+	      "date": "03/02/2019",
+	      "likes": 977
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "4c0054e3-4220-462e-a68c-f35985e184be",
+	      "title": "product_21_promocao",
+	      "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+	      "price": 456,
+	      "date": "04/10/2019",
+	      "likes": 795
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "d14ed725-7d2b-45c1-92fe-a203e7d6c506",
+	      "title": "product_22_padrao",
+	      "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+	      "price": 298,
+	      "date": "27/12/2018",
+	      "likes": 625
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "2684252c-19ce-44d1-86be-1bcace7fed93",
+	      "title": "product_23_lancamento",
+	      "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+	      "price": 500,
+	      "date": "21/04/2019",
+	      "likes": 910
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "01c439ce-a225-44e6-b0ab-3127960f2cd3",
+	      "title": "product_24_promocao",
+	      "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+	      "price": 344,
+	      "date": "28/12/2018",
+	      "likes": 314
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "f1543e8d-ee27-47c5-92e3-0fd015cc4f75",
+	      "title": "product_25_promocao",
+	      "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+	      "price": 321,
+	      "date": "09/05/2019",
+	      "likes": 870
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "9341d13e-b327-4fc4-9760-4910d4e3d7b4",
+	      "title": "product_26_lancamento",
+	      "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+	      "price": 441,
+	      "date": "23/11/2019",
+	      "likes": 409
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "0024159b-fa70-431d-a998-874b6b54d850",
+	      "title": "product_27_lancamento",
+	      "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+	      "price": 93,
+	      "date": "25/10/2019",
+	      "likes": 810
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "204e4dec-1296-499d-b6d5-c1b06a0bd818",
+	      "title": "product_28_lancamento_promocao",
+	      "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+	      "price": 108,
+	      "date": "27/03/2019",
+	      "likes": 911
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "5321e7d4-fb16-441c-80cc-052f834b913d",
+	      "title": "product_29_padrao",
+	      "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+	      "price": 325,
+	      "date": "16/11/2019",
+	      "likes": 122
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "a4b94e73-617d-4545-a1f1-84318af20a6c",
+	      "title": "product_30_padrao",
+	      "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+	      "price": 56,
+	      "date": "20/10/2019",
+	      "likes": 6
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "eddacee6-f9bb-4624-a0e6-9e245f124fb0",
+	      "title": "product_31_padrao",
+	      "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+	      "price": 465,
+	      "date": "08/06/2019",
+	      "likes": 848
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "36f45632-2c2a-406a-baf7-3f0e663c5afc",
+	      "title": "product_32_padrao",
+	      "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+	      "price": 389,
+	      "date": "22/06/2019",
+	      "likes": 465
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "df880409-34b5-4f5f-8a11-8fa52da48bcc",
+	      "title": "product_33_lancamento_promocao",
+	      "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+	      "price": 317,
+	      "date": "03/01/2019",
+	      "likes": 219
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "6bd96095-f36b-4db5-8a88-dd45a0d997ab",
+	      "title": "product_34_lancamento_promocao",
+	      "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+	      "price": 415,
+	      "date": "29/07/2019",
+	      "likes": 959
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "a1b2534d-4ea5-487b-800f-391f18f5457e",
+	      "title": "product_35_lancamento_promocao",
+	      "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+	      "price": 147,
+	      "date": "08/01/2019",
+	      "likes": 441
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "9915ad4b-ee89-413a-a554-82dc7b2c0cdb",
+	      "title": "product_36_lancamento",
+	      "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+	      "price": 101,
+	      "date": "03/03/2019",
+	      "likes": 15
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "3f759fbd-a979-4c0d-aebf-b7ab096d86d5",
+	      "title": "product_37_promocao",
+	      "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+	      "price": 316,
+	      "date": "03/07/2019",
+	      "likes": 136
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "815b0a81-8668-405d-abb9-cc4b7b5edf67",
+	      "title": "product_38_lancamento_promocao",
+	      "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+	      "price": 464,
+	      "date": "03/07/2019",
+	      "likes": 321
+	    },
+	    {
+	      "media": "direct",
+	      "post_id": "56d0960e-c02a-4c62-9887-707fdb082e7d",
+	      "title": "product_39_lancamento_promocao",
+	      "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+	      "price": 32,
+	      "date": "20/07/2019",
+	      "likes": 70
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "1143a4b5-d7b8-4e88-a099-253e927b1500",
+	      "title": "product_0_promocao",
+	      "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+	      "price": 84,
+	      "date": "07/01/2019",
+	      "likes": 456
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "e5c260b2-7133-40af-94f2-168142ef7c06",
+	      "title": "product_1_lancamento",
+	      "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+	      "price": 299,
+	      "date": "20/02/2019",
+	      "likes": 274
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "6839a8dc-7dd8-4084-84bd-38a8206b011f",
+	      "title": "product_2_lancamento",
+	      "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+	      "price": 11,
+	      "date": "14/03/2019",
+	      "likes": 28
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "4892e747-24b8-42e8-89f2-066efd67db03",
+	      "title": "product_3_lancamento",
+	      "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+	      "price": 207,
+	      "date": "08/02/2019",
+	      "likes": 909
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "217e9bf4-d247-4e91-9970-472d4d47778a",
+	      "title": "product_4_lancamento",
+	      "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+	      "price": 93,
+	      "date": "01/10/2019",
+	      "likes": 1
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "7061cf7f-e9ac-4634-88f0-51cd22aab817",
+	      "title": "product_5_lancamento_promocao",
+	      "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+	      "price": 389,
+	      "date": "27/05/2019",
+	      "likes": 881
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "6370e06f-d0cc-42d8-bcea-c357689d3efc",
+	      "title": "product_6_promocao",
+	      "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+	      "price": 303,
+	      "date": "09/05/2019",
+	      "likes": 686
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "99b3e4ad-3cb6-41cd-bdfe-9d4ec54555a8",
+	      "title": "product_7_padrao",
+	      "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+	      "price": 304,
+	      "date": "16/02/2019",
+	      "likes": 794
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "5a8ffc39-2fd6-4893-8bf8-50010db15bfe",
+	      "title": "product_8_lancamento",
+	      "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+	      "price": 343,
+	      "date": "02/02/2019",
+	      "likes": 235
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "803decc0-2beb-41c0-8454-5592760f43ba",
+	      "title": "product_9_padrao",
+	      "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+	      "price": 345,
+	      "date": "16/10/2019",
+	      "likes": 390
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "e50446fd-82a0-4c3e-ada3-22e8e0c7990f",
+	      "title": "product_10_promocao",
+	      "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+	      "price": 231,
+	      "date": "12/05/2019",
+	      "likes": 787
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "92eeba63-a848-4e68-9fd5-2077f658f7c6",
+	      "title": "product_11_lancamento_promocao",
+	      "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+	      "price": 228,
+	      "date": "02/10/2019",
+	      "likes": 154
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "efaf2f37-84e1-4216-9898-7d08f69be7b3",
+	      "title": "product_12_padrao",
+	      "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+	      "price": 389,
+	      "date": "26/03/2019",
+	      "likes": 171
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "80c2bffb-142d-4017-95ed-3417e5ff72f6",
+	      "title": "product_13_lancamento_promocao",
+	      "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+	      "price": 124,
+	      "date": "03/12/2018",
+	      "likes": 919
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "a8be5085-0017-4cec-a732-9b51e6ec8129",
+	      "title": "product_14_promocao",
+	      "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+	      "price": 103,
+	      "date": "12/08/2019",
+	      "likes": 644
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "0737e555-3d41-45cc-a590-d11f706ac32d",
+	      "title": "product_15_lancamento",
+	      "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+	      "price": 270,
+	      "date": "26/07/2019",
+	      "likes": 370
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "9cd9e26a-4f0a-4641-9d68-f4d8d94dff04",
+	      "title": "product_16_promocao",
+	      "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+	      "price": 394,
+	      "date": "31/07/2019",
+	      "likes": 428
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "9374db15-798e-4732-93e3-a06705bfbe78",
+	      "title": "product_17_lancamento",
+	      "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+	      "price": 13,
+	      "date": "25/10/2019",
+	      "likes": 518
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "ad6b5eaf-b0a9-4166-8296-98d4d837ab8d",
+	      "title": "product_18_lancamento_promocao",
+	      "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+	      "price": 404,
+	      "date": "03/12/2018",
+	      "likes": 597
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "887f5b0e-0bab-4fe9-9bbe-24373433965a",
+	      "title": "product_19_padrao",
+	      "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+	      "price": 172,
+	      "date": "17/07/2019",
+	      "likes": 794
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "48e192e8-6884-4d07-8813-177f7ea8bbb3",
+	      "title": "product_20_promocao",
+	      "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+	      "price": 389,
+	      "date": "07/02/2019",
+	      "likes": 847
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "2f2d4865-778a-4dc3-aad2-63f31d1a25ac",
+	      "title": "product_21_promocao",
+	      "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+	      "price": 456,
+	      "date": "20/09/2019",
+	      "likes": 764
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "4567a615-ea42-4821-8f2b-0154a83983af",
+	      "title": "product_22_padrao",
+	      "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+	      "price": 298,
+	      "date": "12/09/2019",
+	      "likes": 309
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "636ed268-e179-4336-9bf8-e1556d294c54",
+	      "title": "product_23_lancamento",
+	      "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+	      "price": 500,
+	      "date": "06/09/2019",
+	      "likes": 440
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "e44a47bf-15b9-475b-9364-85841e3150d8",
+	      "title": "product_24_promocao",
+	      "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+	      "price": 344,
+	      "date": "19/06/2019",
+	      "likes": 210
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "21fc2bb1-77cb-42e8-a78e-f2aa6901f9bd",
+	      "title": "product_25_promocao",
+	      "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+	      "price": 321,
+	      "date": "19/03/2019",
+	      "likes": 205
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "eee8ef1e-7ce5-4b60-9b4f-30a1bcde1ce6",
+	      "title": "product_26_lancamento",
+	      "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+	      "price": 441,
+	      "date": "17/09/2019",
+	      "likes": 206
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "68cecf4b-22e5-4108-be8d-0aff2b962158",
+	      "title": "product_27_lancamento",
+	      "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+	      "price": 93,
+	      "date": "17/02/2019",
+	      "likes": 235
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "2fb3200d-5df4-4dfb-9304-f729071212de",
+	      "title": "product_28_lancamento_promocao",
+	      "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+	      "price": 108,
+	      "date": "04/06/2019",
+	      "likes": 495
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "ca0cd05a-2cc6-4ebf-9938-227787f17cf3",
+	      "title": "product_29_padrao",
+	      "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+	      "price": 325,
+	      "date": "06/11/2019",
+	      "likes": 96
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "b2d569ff-05b3-41af-b06c-3c2f7606f50c",
+	      "title": "product_30_padrao",
+	      "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+	      "price": 56,
+	      "date": "30/10/2019",
+	      "likes": 732
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "974f7cd6-d581-4477-863b-73066f686f44",
+	      "title": "product_31_padrao",
+	      "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+	      "price": 465,
+	      "date": "29/04/2019",
+	      "likes": 690
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "37f8cf7e-677a-427a-b1db-26ab1693aba2",
+	      "title": "product_32_padrao",
+	      "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+	      "price": 389,
+	      "date": "09/02/2019",
+	      "likes": 799
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "f172b391-ac3c-4b05-97b2-01a63394d999",
+	      "title": "product_33_lancamento_promocao",
+	      "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+	      "price": 317,
+	      "date": "21/02/2019",
+	      "likes": 844
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "d8049471-d787-42e3-bf14-8a2c3d4f6ae3",
+	      "title": "product_34_lancamento_promocao",
+	      "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+	      "price": 415,
+	      "date": "16/03/2019",
+	      "likes": 291
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "6f630d83-6fa9-47c0-b603-dbb14a1df69d",
+	      "title": "product_35_lancamento_promocao",
+	      "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+	      "price": 147,
+	      "date": "11/09/2019",
+	      "likes": 316
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "f8320939-c93c-4b1b-a990-d6a49f969284",
+	      "title": "product_36_lancamento",
+	      "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+	      "price": 101,
+	      "date": "24/06/2019",
+	      "likes": 648
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "411476f3-cad3-4cd7-9e03-530d6e75276f",
+	      "title": "product_37_promocao",
+	      "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+	      "price": 316,
+	      "date": "20/11/2019",
+	      "likes": 361
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "78ccba09-e10b-4ecf-b323-b859a363cfb3",
+	      "title": "product_38_lancamento_promocao",
+	      "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+	      "price": 464,
+	      "date": "25/08/2019",
+	      "likes": 780
+	    },
+	    {
+	      "media": "google_organic",
+	      "post_id": "2652f2f9-eed3-4a23-ab7b-d31312306b56",
+	      "title": "product_39_lancamento_promocao",
+	      "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+	      "price": 32,
+	      "date": "25/07/2019",
+	      "likes": 43
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "73e6c244-fdee-41b0-bbcb-941b9b90a34d",
+	      "title": "product_0_promocao",
+	      "product_id": "72c9936a-24ae-4dc2-8bc8-3315b9055b49",
+	      "price": 84,
+	      "date": "03/08/2019",
+	      "likes": 393
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "f532acc9-cf4f-4759-b328-4f55ee787c4a",
+	      "title": "product_1_lancamento",
+	      "product_id": "93d504f8-a63d-4096-b747-de7cd167c550",
+	      "price": 299,
+	      "date": "28/02/2019",
+	      "likes": 662
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "1cf0d262-ad07-436b-8a5a-d4c7f8319f89",
+	      "title": "product_2_lancamento",
+	      "product_id": "1978ddc1-cb28-4a26-a4eb-e5f42aeb883b",
+	      "price": 11,
+	      "date": "25/01/2019",
+	      "likes": 645
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "2f2d1d20-0b03-42a3-aa78-2c962d396eef",
+	      "title": "product_3_lancamento",
+	      "product_id": "39b4929e-3246-4a72-9416-0385fa1a14b4",
+	      "price": 207,
+	      "date": "12/04/2019",
+	      "likes": 211
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "58d214f9-425a-4a6a-a1a7-efe8fa49a2dd",
+	      "title": "product_4_lancamento",
+	      "product_id": "fe3cade5-4cec-4ed4-9cbe-26cd3d339f89",
+	      "price": 93,
+	      "date": "13/06/2019",
+	      "likes": 685
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "26850b8f-e8e7-43ac-b563-664258d59847",
+	      "title": "product_5_lancamento_promocao",
+	      "product_id": "3096a02d-de88-43ac-980d-f2735ba9e90f",
+	      "price": 389,
+	      "date": "08/06/2019",
+	      "likes": 926
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "3709b99f-315f-4e78-a7b9-971d7a2de71d",
+	      "title": "product_6_promocao",
+	      "product_id": "b2dc2b0a-1a93-448b-b11b-725fbccfc564",
+	      "price": 303,
+	      "date": "17/03/2019",
+	      "likes": 780
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "02dba980-cd61-4db9-82a1-c078947ea1a3",
+	      "title": "product_7_padrao",
+	      "product_id": "b8566e62-7572-4f43-bb58-01bce8bd6250",
+	      "price": 304,
+	      "date": "10/01/2019",
+	      "likes": 83
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "45382321-3fd2-4185-a2d7-c21cad64949e",
+	      "title": "product_8_lancamento",
+	      "product_id": "134300bc-e16f-469c-a45d-e4dc6a1e9da1",
+	      "price": 343,
+	      "date": "12/09/2019",
+	      "likes": 650
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "73e422c0-6fd3-4ebd-bcdf-5be8f53a7b6c",
+	      "title": "product_9_padrao",
+	      "product_id": "b9019f0e-a314-438c-958a-31c3b398da2f",
+	      "price": 345,
+	      "date": "22/10/2019",
+	      "likes": 729
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "3e8dd343-0877-46b0-a8db-4bfc71cd9ff6",
+	      "title": "product_10_promocao",
+	      "product_id": "56ceadbe-461b-4765-8e68-a0767db3145c",
+	      "price": 231,
+	      "date": "02/10/2019",
+	      "likes": 69
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "96059fdb-c708-453e-9740-74d03d3b2ba0",
+	      "title": "product_11_lancamento_promocao",
+	      "product_id": "f762d53e-2010-4797-bb38-7f4122b684e3",
+	      "price": 228,
+	      "date": "14/02/2019",
+	      "likes": 393
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "1c7fd933-5f5f-438e-b527-9f3a2a02561c",
+	      "title": "product_12_padrao",
+	      "product_id": "561ac8c3-daa6-4ce4-aba4-88556a93b1ff",
+	      "price": 389,
+	      "date": "11/02/2019",
+	      "likes": 590
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "4ee7492d-f8ab-42ca-ace1-f3fdc5825f53",
+	      "title": "product_13_lancamento_promocao",
+	      "product_id": "a9e5d53e-628b-4f72-980b-e03d14612b5c",
+	      "price": 124,
+	      "date": "08/05/2019",
+	      "likes": 114
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "b7a008cd-af43-4a03-a2dd-73f06aa5ad90",
+	      "title": "product_14_promocao",
+	      "product_id": "e7d6e8dd-c6d1-4022-b756-748cb6f5b51a",
+	      "price": 103,
+	      "date": "27/06/2019",
+	      "likes": 896
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "7eb93683-3764-4e74-b3b2-0bba3f572cc6",
+	      "title": "product_15_lancamento",
+	      "product_id": "ffb6f27b-fac1-4c95-ba14-97cfd9274ea8",
+	      "price": 270,
+	      "date": "12/05/2019",
+	      "likes": 174
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "cc402b06-6a32-42fb-a476-2f5c64df8724",
+	      "title": "product_16_promocao",
+	      "product_id": "21bd3430-ee21-4ef4-af9a-9fb5925a18c7",
+	      "price": 394,
+	      "date": "17/08/2019",
+	      "likes": 284
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "0d9d7c92-7531-4c43-9834-99c2eb06b450",
+	      "title": "product_17_lancamento",
+	      "product_id": "330e7ae7-e3cc-43ac-b951-9e757f166097",
+	      "price": 13,
+	      "date": "09/07/2019",
+	      "likes": 254
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "4c0eb175-6163-453e-b23d-14547155957a",
+	      "title": "product_18_lancamento_promocao",
+	      "product_id": "cbe2244c-12d3-4be2-8a38-ed7cb21a64d1",
+	      "price": 404,
+	      "date": "21/03/2019",
+	      "likes": 94
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "701d6de1-7333-40f3-9675-4fe2e8d35e7a",
+	      "title": "product_19_padrao",
+	      "product_id": "ddfd6e5e-658c-467c-9a34-e4f4f7f645dd",
+	      "price": 172,
+	      "date": "06/03/2019",
+	      "likes": 629
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "805a0831-dc8f-4edf-8bfe-ddbe31d2a5cb",
+	      "title": "product_20_promocao",
+	      "product_id": "9b1046a4-6a5b-45e1-8d71-31761d7d02c7",
+	      "price": 398,
+	      "date": "10/02/2019",
+	      "likes": 183
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "1c0fe3c9-926d-47cb-808c-c3a35d2cf76a",
+	      "title": "product_21_promocao",
+	      "product_id": "af8714ea-14ea-4d72-b13b-7409648f5cce",
+	      "price": 456,
+	      "date": "16/09/2019",
+	      "likes": 656
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "3bff4bbe-d291-4de3-9497-6d153f714f8e",
+	      "title": "product_22_padrao",
+	      "product_id": "7ae2c9eb-6fc4-488e-a5d5-51314139f2f6",
+	      "price": 298,
+	      "date": "04/11/2019",
+	      "likes": 879
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "72e8f85e-c6d6-4ff4-86b3-52e0998e3d6a",
+	      "title": "product_23_lancamento",
+	      "product_id": "5953bf59-8b01-4550-b7c7-0ef43d8bafab",
+	      "price": 500,
+	      "date": "17/10/2019",
+	      "likes": 285
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "8db29aff-cc4a-43c4-9296-09b5609c390e",
+	      "title": "product_24_promocao",
+	      "product_id": "aea4fc80-0bae-4f32-8a6a-abe91e7d6d4e",
+	      "price": 434,
+	      "date": "12/12/2018",
+	      "likes": 159
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "cbb7f5c9-a368-46d4-920c-0c44876629f8",
+	      "title": "product_25_promocao",
+	      "product_id": "dc9cb92a-e43b-47ab-81eb-fc5b8980f651",
+	      "price": 321,
+	      "date": "07/03/2019",
+	      "likes": 437
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "a0be16b0-0134-415d-9641-87be6304def2",
+	      "title": "product_26_lancamento",
+	      "product_id": "9f4b97e0-b9b4-483e-b90b-893aec816d9c",
+	      "price": 441,
+	      "date": "22/08/2019",
+	      "likes": 87
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "581a2799-d44e-457c-8165-1a070f1260f7",
+	      "title": "product_27_lancamento",
+	      "product_id": "4d5affac-4708-4b06-a105-8bd094ea0794",
+	      "price": 93,
+	      "date": "11/01/2019",
+	      "likes": 227
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "6acd1fa8-f059-4c88-890b-0ae44d9ffc69",
+	      "title": "product_28_lancamento_promocao",
+	      "product_id": "04f32293-00ad-4c0c-ae7b-929312769553",
+	      "price": 108,
+	      "date": "06/11/2019",
+	      "likes": 798
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "c625fa83-88c4-404c-8c84-223beeb61d14",
+	      "title": "product_29_padrao",
+	      "product_id": "bd9572c3-4d06-40b2-9282-967ba1d69264",
+	      "price": 325,
+	      "date": "29/05/2019",
+	      "likes": 953
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "42e4e5dd-0da8-470a-907a-65dae95fbd2e",
+	      "title": "product_30_padrao",
+	      "product_id": "98848ae0-0943-49a3-9996-bbdb12d8dec7",
+	      "price": 56,
+	      "date": "25/06/2019",
+	      "likes": 533
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "53eeb24c-f38a-4b51-be6e-244b4e30db1d",
+	      "title": "product_31_padrao",
+	      "product_id": "189472ac-f1f9-42df-89db-b9263024e2bd",
+	      "price": 465,
+	      "date": "10/01/2019",
+	      "likes": 108
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "8871d006-823c-46ac-bb26-420ef21ac973",
+	      "title": "product_32_padrao",
+	      "product_id": "05b0c510-f537-4e21-8a7f-1df5de69bbd0",
+	      "price": 389,
+	      "date": "30/05/2019",
+	      "likes": 635
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "0a3d6c9f-68ae-4cb1-9a27-b7248deb0d04",
+	      "title": "product_33_lancamento_promocao",
+	      "product_id": "81d0832d-f8d0-46b1-9f81-0e1d01cf4065",
+	      "price": 317,
+	      "date": "08/06/2019",
+	      "likes": 148
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "da1fc280-d9be-45ef-9133-112bcb2e1516",
+	      "title": "product_34_lancamento_promocao",
+	      "product_id": "58bd5a72-7007-4554-937b-b76a0503f687",
+	      "price": 415,
+	      "date": "01/07/2019",
+	      "likes": 819
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "34d2d448-e01f-431e-99ba-ee37e60bb7a6",
+	      "title": "product_35_lancamento_promocao",
+	      "product_id": "527307ad-b1e3-4813-8c8e-4f087ad2c838",
+	      "price": 147,
+	      "date": "23/04/2019",
+	      "likes": 544
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "05b4013a-04a9-40f9-939b-85a672a0b651",
+	      "title": "product_36_lancamento",
+	      "product_id": "112185eb-896e-4901-bbf8-9fff574f8d15",
+	      "price": 101,
+	      "date": "30/04/2019",
+	      "likes": 523
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "8357824f-2ba2-4568-99d7-d9023f0d1ced",
+	      "title": "product_37_promocao",
+	      "product_id": "a274c7a9-f3e0-4dde-8ddc-da6c0bcf7cf1",
+	      "price": 316,
+	      "date": "31/05/2019",
+	      "likes": 902
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "79652055-c59e-410c-a5fa-1cda2a1f78f0",
+	      "title": "product_38_lancamento_promocao",
+	      "product_id": "100836c7-c1b4-46e0-bac8-81ae422549db",
+	      "price": 464,
+	      "date": "06/08/2019",
+	      "likes": 417
+	    },
+	    {
+	      "media": "instagram_cpc",
+	      "post_id": "2f10f548-557e-4e93-9971-370b3806b5b9",
+	      "title": "product_39_lancamento_promocao",
+	      "product_id": "47940a7e-6161-4823-8fe8-e596d565ee51",
+	      "price": 32,
+	      "date": "09/07/2019",
+	      "likes": 714
+	    }
+	  ]
+	};
+
+    // Filtrar apenas promocao
+    var postsPromocao = [];
+    var post = {};
+    //Percorre array(vetor)
+    for(var i = 0; i < dadosIniciais.posts.length; i++){
+        post = dadosIniciais.posts[i];
+        //Checa palavra promocao
+        if( /promocao/g.test(post.title) ){
+            postsPromocao.push(post);
+        }
+    }
+
+    //Monta Resposta A
+    var respostaA = [];
+    for(var i = 0; i < postsPromocao.length; i++){
+        post = postsPromocao[i];
+        respostaA.push( {
+            product_id: post.product_id,
+            price_field: post.price
+        } );
+    }
+
+    //Ordena por id
+    respostaA.sort(function(a, b){
+        if(a.product_id >  b.product_id){
+            return 1;
+        }else{
+            return -1
+        }
+    });
+
+    //Ordena por preco
+    respostaA.sort(function(a, b){
+        if(a.price_field >  b.price_field){
+            return 1;
+        }else{
+            return -1
+        }
+    });
+
+    //Remove duplicados - achado na internet
+    respostaA = respostaA.filter(function (a) {
+        return !this[JSON.stringify(a)] && (this[JSON.stringify(a)] = true);
+    }, Object.create(null));
+
+   
+    // Filtrar apenas likes
+    var nLikes = [];
+    //Percorre array(vetor)
+    for(var i = 0; i < dadosIniciais.posts.length; i++){
+        post = dadosIniciais.posts[i];
+        //Checa palavra promocao
+        if( post.likes > 700 && post.media === "instagram_cpc"){
+            nLikes.push(post);
+        }
+    }
+
+    //Monta resposta B
+    var respostaB = [];
+    for(var i = 0; i < nLikes.length; i++){
+        post = nLikes[i];
+        respostaB.push( {
+        	price_field: post.price,
+            post_id: post.post_id
+       	} );
+    }
+
+    //Ordena por id
+    respostaB.sort(function(a, b){
+        if(a.post_id >  b.post_id){
+            return 1;
+        }else{
+            return -1
+        }
+    });
+
+    //Ordena por preco
+    respostaB.sort(function(a, b){
+        if(a.price_field >  b.price_field){
+            return 1;
+        }else{
+            return -1
+        }
+    });        
+
+    // Filtrar apenas likes de maio de 2019
+    var likesMaio = 0;
+    //Percorre array(vetor)
+    for(var i = 0; i < dadosIniciais.posts.length; i++){
+        post = dadosIniciais.posts[i];
+        //Checa likes em maio
+        if( /05\/2019/g.test(post.date) && (post.media === "google_cpc" || post.media === "instagram_cpc" || post.media === "facebook_cpc")  ){
+            likesMaio+=(post.likes);
+        }
+    }
+
+    //Exercicio D
+    var listaNegra = [];
+    var valorPadraoProduto = {}; //folha
+    var valorGuardado = null;
+    //Percorre array(vetor)
+    for(var i = 0; i < exeD.posts.length; i++){
+        post = exeD.posts[i];
+        //checa se existe na folha
+        if( valorPadraoProduto[ post.product_id ] ){
+            valorGuardado = valorPadraoProduto[ post.product_id ];
+            //Checa se valor do produto atual eh diferente do valor guardado
+            if( valorGuardado != post.price ){
+                //Checa se já existe na lista negra
+                if( listaNegra.includes( post.product_id ) ){
+                    // Nao faz nada
+                }else{
+                    //Adiciona o produto a lista
+                    listaNegra.push( post.product_id );
+                }
+            }
+        }else{
+            //Adiciono o produto e seu valor a folha
+            valorPadraoProduto[ post.product_id ] = post.price
+        }
+
+    }
+
+    listaNegra.sort();  
+
+
+    console.log("PROMOCOES: ", respostaA, "\nLIKES: ", respostaB, "\nLIKES DE MAIO DE 2019: ", likesMaio, "\nINCONSISTENCIAS: ", listaNegra);
+
+	</script>
+</head>
+<body>
+	
+
+</body>
+</html>
